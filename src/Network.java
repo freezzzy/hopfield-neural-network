@@ -85,7 +85,7 @@ public class Network {
         for (int indexImage = 0; indexImage < size; indexImage++) {
             System.out.println("\nImage #" + (indexImage + 1));
             for (int indexPixel = 0; indexPixel < pixels; indexPixel++) {
-                System.out.print(images.get(indexImage).get(0, indexPixel) == 1 ? " " : "@");
+                System.out.print(images.get(indexImage).get(0, indexPixel) == 1 ? "*" : "@");
                 if ((indexPixel + 1) % width == 0) {
                     System.out.println("");
                 }
@@ -95,7 +95,7 @@ public class Network {
 
     void showImage() {
         for (int indexPixel = 0; indexPixel < pixels; indexPixel++) {
-            System.out.print(image.get(0, indexPixel) == 1 ? " " : "@");
+            System.out.print(image.get(0, indexPixel) == 1 ? "*" : "@");
             if ((indexPixel + 1) % width == 0) {
                 System.out.println("");
             }
