@@ -5,8 +5,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Network network = new Network();
-        network.setImages("images.txt");
-        network.setImage("image1.txt");
+        network.setImages("images/images.txt");
+        network.setImage("images/image1.txt");
         network.showImages();
         System.out.println("---------");
         network.createWeightMatrix();
